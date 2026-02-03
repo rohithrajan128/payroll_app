@@ -1,0 +1,690 @@
+/*for font base app */
+.font-base-app {
+  font-family: cursive;
+  font-size: 60px;
+  color: #2b70d6 !important;
+}
+
+/*page-title font-color and font weight*/
+.page-title-color {
+  font-weight: 600 !important;
+  background: linear-gradient(120deg, #de00d4, #008dff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* body */
+body {
+  font-size: 0.84rem !important;
+  /* font-family: 'Raleway', sans-serif !important;; */
+}
+
+/*To remove underline when anchor tag is used */
+a {
+  text-decoration: none !important;
+}
+
+/* for star */
+
+.required_field::after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+}
+
+/*card header background*/
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgb(255 255 255) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.google_icon_gradient {
+  /* background: linear-gradient(90deg, #de00d4, #008dff); */
+  /* background-clip: border-box; */
+  font-size: 25px;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+/*card footer background*/
+.card-footer {
+  padding: 0.5rem 1rem;
+  background-color: rgb(255 255 255) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/*Routerlink active */
+.app-page-title {
+  margin: -30px -30px 12px !important;
+  padding: 10px 10px !important;
+}
+
+/* buttons */
+/* add_new,submit */
+.hover_shine {
+  position: relative;
+  overflow: hidden;
+  box-shadow: -2px 2px 2px #ccc;
+}
+
+.hover_shine:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(229, 172, 142, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(229, 172, 142, 0)
+  );
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+/*This activates the sheen once the button has been hovered*/
+.hover_shine:hover::after {
+  animation: hover_shine 2s forwards;
+}
+
+@keyframes hover_shine {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+/* vue-sidebar */
+
+.router-link-exact-active {
+  background: #e0f3ff;
+  color: #3f6ad8 !important;
+}
+
+.router-link-active {
+  background: #e0f3ff;
+  color: #3f6ad8 !important;
+}
+
+/* icons */
+/* sidebar icons */
+v-sidebar-menu[data-v-08f7a3b5] .vsm-icon {
+  font-size: 16px !important;
+}
+
+/* action-btn */
+/* all action btn */
+.icon_size {
+  font-size: 20px !important;
+}
+
+/* delete */
+.delete_btn:hover {
+  animation: shake 1s;
+}
+
+.delete_btn {
+  color: #ff0000bf !important;
+  font-size: 23px !important;
+}
+
+.delete_conform_yes:hover {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  20% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(-50deg);
+  }
+}
+
+/* widths && heights */
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.edit_btn:hover {
+  transform: translateY(3px);
+  /* transform: rotate3d(1, 1, 1, 360deg);
+    transition:transform 1s; */
+}
+
+.edit_btn {
+  color: #1976d2 !important;
+  font-weight: bold !important;
+}
+
+.text-rose,
+.border-rose {
+  color: #ff637e !important;
+}
+
+.settings_icon:hover {
+  transform: rotate(90deg);
+  transition: transform 0.5s, color 0.5s;
+}
+
+.settings_icon {
+  color: #18c018 !important;
+  font-weight: bold !important;
+}
+
+.add_new {
+  color: white !important;
+  background: linear-gradient(#1976d2, #1537e0) !important;
+}
+.cancel_button {
+  color: white !important;
+  background: linear-gradient(#4f5052, #242525) !important;
+}
+.error_button {
+  color: white !important;
+  background: linear-gradient(#ec2525, #e50606) !important;
+}
+
+/* cancel */
+
+/* search bar */
+/* v-data-table  search bar*/
+.srch_bar .v-input__slot {
+  margin-bottom: 0 !important;
+  width: 300px !important;
+  margin: 0px !important;
+
+  flex-grow: 1 !important;
+}
+.v-toolbar__content {
+  justify-content: space-between !important;
+}
+
+/*Role name text-color(MenuAccess)*/
+.role_text_color {
+  color: blue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*User profile*/
+
+.bg-theme-green {
+  background: #3ac47d !important;
+}
+
+.jd-top-header {
+  width: 100%;
+  justify-content: space-between;
+  align-items: self-end;
+}
+
+.job-title {
+  text-transform: capitalize;
+  font-size: 15px !important;
+  font-weight: 600;
+  margin-bottom: 2px !important;
+  line-height: 20px;
+  color: #1976d2;
+}
+
+.desc-title {
+  min-width: 100px;
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.desc-title-width {
+  min-width: 108px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.desc-content-width {
+  /* min-width: 250px; */
+  min-width: 200px;
+}
+
+.spanactivesize {
+  min-width: 70px;
+  text-align: center;
+}
+
+.vsheetbtab {
+  padding: 1% 5%;
+}
+.vsheetbtabpersonal {
+  padding: 5px 5%;
+}
+
+.detailsnotfound {
+  color: rgb(165, 159, 159);
+  font-size: larger;
+}
+.pagetitledetails {
+  min-height: 400px;
+}
+
+.pagetitle_in_userdetails {
+  margin: 0px 0px -50px 0px !important;
+}
+.address_details_space {
+  margin-top: -30px !important;
+  margin-bottom: 10px !important;
+}
+
+.dialogcloseinuserdetails:hover {
+  transform: rotate(180deg);
+}
+.submitbuttonindialogusers {
+  margin-bottom: -4% !important;
+}
+
+.velmld-parent {
+  height: 100% !important;
+}
+.expand_row_header {
+  font-weight: 410 !important;
+  font-size: small !important;
+}
+.comments_overflow {
+  overflow: auto !important;
+  max-width: 500px !important;
+  max-height: 60px !important;
+}
+.calender_title {
+  font-size: large !important;
+  font-weight: 700 !important;
+  color: #5b5d5e;
+}
+.timesheetprojectborder {
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+.paragraph_timesheet {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: rgb(61, 60, 60);
+}
+.paragraph_timesheet_text {
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: rgb(0, 0, 0);
+}
+.timesheetTable {
+  width: 400%;
+  border: solid rgb(74, 71, 71) 1pt;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+/*User creation Css*/
+.mtb-10 {
+  margin: 10px 0px !important;
+}
+.mbtm-7 {
+  margin-bottom: 7px !important;
+}
+.title-section {
+  background: #1976d1;
+  color: #fff;
+  font-size: 17px;
+  padding: 6px 10px 4px 4px;
+  margin: 10px 0px 21px 0px;
+}
+.title-section-user_creation {
+  border-left: 3px solid #1976d1;
+  color: #1976d1;
+  font-size: 17px;
+  padding: 11px 10px;
+  margin: 10px 0px 21px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 16px;
+  border-radius: 3px;
+  width: 100%;
+  background: #ddeeff57;
+}
+.mt_30 {
+  margin-top: -30px;
+}
+.divheadrow {
+  text-align: center;
+  min-width: 20%;
+  padding: 26px 15px 0px 0px;
+  border: 1px solid rgb(176, 176, 176);
+  font-weight: 700;
+}
+.divheadrowsmall {
+  text-align: center;
+  min-width: 13%;
+  padding: 26px 15px 0px 0px;
+  border: 1px solid rgb(176, 176, 176);
+  font-weight: 700;
+}
+
+.divbodyrow {
+  min-width: 20%;
+  padding: 26px 15px 0px 15px;
+  border: 1px solid rgb(176, 176, 176);
+}
+.divbodyrowsmall {
+  min-width: 13%;
+  padding: 26px 15px 0px 15px;
+  border: 1px solid rgb(176, 176, 176);
+}
+
+.outerdivfortimesheet {
+  display: inline-flex;
+}
+
+.divcheckboxhead {
+  min-width: 4.5%;
+  padding: 7px 15px 0px 15px;
+  border: 1px solid rgb(176, 176, 176);
+}
+
+.divcheckboxbody {
+  min-width: 4.5%;
+  padding: 14px 15px 0px 15px;
+  border: 1px solid rgb(176, 176, 176);
+}
+.vlayoutDetailsdisplay {
+  margin-top: -15px;
+}
+.statusleavetd {
+  justify-content: center;
+  min-width: 90px;
+  text-align: center;
+  padding-left: inherit;
+  margin-left: -20px;
+}
+.description_hover_div {
+  width: 200px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.leavedetailshoverchip:hover {
+  cursor: pointer;
+}
+
+.viconinswitchon {
+  position: absolute;
+  top: 15.5pt;
+  left: 15.5pt;
+}
+.viconinswitchoff {
+  position: absolute;
+  top: 20.5px;
+  left: -1.5px;
+}
+.maindivforswitch {
+  position: relative;
+}
+.viconinswitchon:hover {
+  cursor: pointer;
+}
+.viconinswitchoff:hover {
+  cursor: pointer;
+}
+.heading_align {
+  padding-top: 12px;
+  border-bottom: 1px solid #549865a3;
+  /* border-radius: 9px; */
+  padding: 6px;
+  background: aliceblue;
+  position: sticky;
+  top: 0px;
+  /* background: white; */
+  z-index: 10;
+}
+.announcementouterdiv {
+  position: relative;
+}
+.v-radio .v-label {
+  margin-bottom: 0px !important;
+}
+.v-input .v-label {
+  margin-bottom: 0px !important;
+}
+.announcementinnerdiv {
+  position: absolute;
+  z-index: 1;
+  top: 17px;
+  right: 20px;
+}
+.announcementcarddashboard {
+  height: 485px;
+  width: 924px;
+}
+.scroll-area-sm {
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.calenderscrollbarrowminheight {
+  height: 303px;
+  overflow-x: hidden;
+}
+.approvalsscrollbarrowminheight {
+  height: 238px;
+  overflow-x: hidden;
+}
+
+.scrollbar-sidebar,
+.scrollbar-container {
+  position: relative;
+  height: 100%;
+}
+
+.scroll-area {
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.scroll-area-xs {
+  height: 150px;
+  overflow-x: hidden;
+}
+
+.scroll-area-sm {
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.scroll-area-md {
+  height: 300px;
+  overflow-x: hidden;
+}
+
+.scroll-area-lg {
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.scroll-area-x {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tab-item {
+  padding: nav-link-padding-y nav-link-padding-x;
+  background: none;
+  border: 0;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+&:hover {
+  color: primary;
+}
+
+.tab-item-active:hover,
+.tab-item-active {
+  color: white;
+}
+
+.tab-item-line {
+  height: 35px;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 16px 26px -10px rgba(primary, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(primary, 0.2);
+  position: absolute;
+  background: primary;
+  transition: all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1) 0s;
+  width: 114px;
+  transform: translateX(12px);
+}
+.nodatasvelsedashboard {
+  text-align: center;
+  padding-top: 38px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #817f7f !important;
+}
+.back_color {
+  background: #f0ad4e;
+}
+.createlookupflex {
+  display: flex !important;
+}
+.vchippassportstatus {
+  min-width: 66px;
+  border-radius: 5px !important;
+  justify-content: center;
+  margin-left: -10px;
+}
+.documemtimagediv {
+  width: fit-content;
+  margin-inline: auto;
+}
+.maindocumentdiv {
+  position: relative;
+  padding-block: 28px;
+  margin-inline: 0px;
+  background-color: rgba(255, 255, 255, 0.964) !important;
+  height: 140px !important;
+}
+.maindocumentdiv:hover {
+  border: solid #e6e3e396 1px !important;
+  padding-block: 28px;
+  margin-inline: 0px;
+  background-color: rgb(255, 255, 255) !important;
+  height: 140px !important;
+}
+.questionsectionclass {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0000008c;
+  background-color: rgb(221, 227, 229);
+  pointer-events: none;
+}
+.downloadbuttondocument .v-icon {
+  font-size: 31px !important;
+}
+
+.downloadbuttondocument:hover .v-icon {
+  color: black !important;
+  font-size: 35px !important;
+}
+
+.threedotsmenu {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+.tab-title {
+  /* font-weight: normal !important; */
+  text-transform: capitalize !important;
+}
+
+/* custom css */
+.app-main__outer {
+  margin: -4px 7px 6px 6px;
+}
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+.card-body {
+  background-color: #fff !important;
+}
+.fa-icon {
+  color: #3f6ad8;
+  font-size: 18px;
+}
+font-face {
+  font-family: "YsabeauInfant-Regular";
+  /* src: url('./Fonts/static/YsabeauInfant-Regular.ttf') format('truetype'); */
+  font-weight: normal;
+  font-style: normal;
+}
+.v-data-table > .v-data-table__wrapper > table > tbody > tr > td {
+  font-size: 0.9rem !important;
+}
+/* custom css */
+
+/* scroll area start */
+
+.scroll-area {
+  position: relative;
+  /* height: 89.5vh; */
+  overflow-y: hidden;
+}
+
+.scroll-area .content {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 17px;
+  transition: padding-right 0.3s ease;
+}
+
+.scroll-area .content:hover::-webkit-scrollbar-track {
+  background-color: rgb(231, 228, 228);
+}
+.scroll-area .content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-area .content::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 192, 192);
+  border-radius: 4px;
+}
+
+.scroll-area .content::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.scroll-area .content:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.scroll-area .content:hover {
+  scrollbar-color: rgb(192, 192, 192) rgb(231, 228, 228); /* for Firefox */
+  transition: scrollbar-color 0.3s ease;
+}
+
+.scroll-area .content {
+  scrollbar-width: 3px; /* for Firefox */
+  scrollbar-color: rgb(231, 228, 228) rgb(231, 228, 228); /* for Firefox */
+}
+/* scroll area end */
